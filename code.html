@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Nuzultan Aryan Ramadhan — Siswa RPL SMK Telkom Purwokerto yang passionate di Web Development & UI/UX Design.">
+    <meta name="keywords" content="portfolio, web developer, siswa, rpl, smk telkom purwokerto, nuzultan aryan">
+    <meta name="author" content="Nuzultan Aryan Ramadhan">
+    <meta property="og:title" content="Nuzultan Aryan Ramadhan | Portfolio">
+    <meta property="og:description" content="Siswa RPL SMK Telkom Purwokerto — Web Developer & UI/UX Enthusiast">
+    <meta property="og:type" content="website">
+    <title>Nuzultan Aryan Ramadhan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="code.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Go to home">NAR</a>
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home"        class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about"       class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills"      class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects"    class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#experience"  class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#contact"     class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+                    🌙
+                </button>
+                <a href="#contact" class="cta-btn" aria-label="Contact me">Let's Talk</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero">
+        <!-- Decorative blobs -->
+        <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+        <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+        <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+
+        <div class="hero-container">
+            <!-- Text Content -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    Available for opportunities
+                </div>
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-title">Nuzultan Aryan<br>Ramadhan</h1>
+                <div class="hero-subtitle" id="heroSubtitle" aria-label="Role description">
+                    <span id="typingText"></span><span class="typing-cursor" aria-hidden="true"></span>
+                </div>
+                <p class="hero-description">
+                    Siswa <strong>RPL di SMK Telkom Purwokerto</strong> yang passionate dalam membangun
+                    pengalaman web yang indah dan fungsional. Fokus pada modern web technologies,
+                    clean code, dan user-centered design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        View My Work
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="downloadCvBtn" download aria-label="Download CV">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Visual -->
+            <div class="hero-image" aria-hidden="true">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-inner"></div>
+                    <div class="profile-card">
+                        <!-- Foto Profil -->
+                        <img
+                            src="Foto_Ryan.jpeg"
+                            alt="Foto profil Nuzultan Aryan Ramadhan"
+                            class="profile-photo"
+                        >
+                    </div>
+
+                    <!-- Floating badges -->
+                    <div class="profile-badge profile-badge-1">
+                        <span>💻</span> Web Dev
+                    </div>
+                    <div class="profile-badge profile-badge-2">
+                        <span>🎨</span> UI/UX
+                    </div>
+                    <div class="profile-badge profile-badge-3">
+                        <span>⚡</span> React
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Who I Am</span>
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p class="section-desc">Kenali lebih jauh tentang perjalanan, passion, dan tujuan saya di dunia teknologi.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        Saya adalah seorang siswa <strong>Rekayasa Perangkat Lunak (RPL)</strong> di
+                        <strong>SMK Telkom Purwokerto</strong> yang memiliki passion mendalam terhadap
+                        dunia pengembangan web dan teknologi digital.
+                    </p>
+                    <p class="about-text">
+                        Dengan dedikasi untuk terus belajar, saya aktif mengembangkan skill di bidang
+                        <strong>frontend development</strong>, <strong>UI/UX design</strong>, dan berbagai
+                        teknologi modern. Saya percaya bahwa kode yang baik adalah kode yang tidak hanya
+                        berfungsi, tetapi juga indah dan mudah dipahami.
+                    </p>
+                    <p class="about-text">
+                        Tujuan saya adalah menjadi developer yang kompeten, terus berkontribusi pada
+                        proyek-proyek bermakna, dan pada akhirnya memberikan dampak positif bagi
+                        industri teknologi Indonesia.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat reveal">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label">Projects Done</div>
+                        </div>
+                        <div class="stat reveal" style="transition-delay:0.1s">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat reveal" style="transition-delay:0.2s">
+                            <div class="stat-number" data-count="8">0</div>
+                            <div class="stat-label">Tech Mastered</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info reveal" style="transition-delay:0.15s">
+                    <div class="info-card">
+                        <div class="info-card-icon">🏫</div>
+                        <div class="info-card-text">
+                            <h3>Sekolah</h3>
+                            <p>SMK Telkom Purwokerto</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">💡</div>
+                        <div class="info-card-text">
+                            <h3>Jurusan</h3>
+                            <p>Rekayasa Perangkat Lunak (RPL)</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">🎯</div>
+                        <div class="info-card-text">
+                            <h3>Fokus</h3>
+                            <p>Web Development & UI/UX Design</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">📍</div>
+                        <div class="info-card-text">
+                            <h3>Lokasi</h3>
+                            <p>Purwokerto, Jawa Tengah</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">✉️</div>
+                        <div class="info-card-text">
+                            <h3>Email</h3>
+                            <p>nuzultanaryanramadhan@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What I Know</span>
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <p class="section-desc">Teknologi dan tools yang saya gunakan untuk membangun produk digital yang luar biasa.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- HTML -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 3l1.5 17.5L12 22l6.5-1.5L20 3H4zm13.5 5H8l.3 3h8.9l-.7 7-4.5 1.3-4.5-1.3-.3-3.5h2.7l.2 2 1.9.5 1.9-.5.2-2.5H7.5L7 8z" fill="currentColor"/></svg>
+                        </div>
+                        <h3>HTML5</h3>
+                    </div>
+                    <p>Semantic markup, accessibility, dan struktur web yang baik dan SEO-friendly.</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card reveal" style="transition-delay:0.05s">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 3l1.5 17.5L12 22l6.5-1.5L20 3H4zm12.5 5l-.2 2.5H8.5l.2 2h7.4l-.7 7-3.4 1-3.4-1-.2-2.5h2.5l.1 1.3 1 .3 1-.3.1-1.7H8.1l-.5-5.6h9.4L17 8z" fill="currentColor"/></svg>
+                        </div>
+                        <h3>CSS3</h3>
+                    </div>
+                    <p>Flexbox, Grid, animasi, responsive design, dan glassmorphism modern.</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                        <span class="skill-pct">85%</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card reveal" style="transition-delay:0.1s">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 3h18v18H3V3zm16.5 16.5V4.5h-15v15h15zM11.5 11.5h-2V18h2v-6.5zm0-4h-2v2h2v-2zm5 4c-.8 0-1.5.7-1.5 1.5v3c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-.5h-2v-2h2V13c0-.8-.7-1.5-1.5-1.5z" fill="currentColor"/></svg>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>ES6+, DOM manipulation, async/await, dan interaktivitas modern.</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                </div>
+
+                <!-- React -->
+                <div class="skill-card reveal" style="transition-delay:0.15s">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="2.5" fill="currentColor"/><path d="M12 6.5c3.8 0 7.1.8 9.4 2.1.8.5 1.6 1.1 1.6 2s-.8 1.5-1.6 2C19.1 13.8 15.8 14.5 12 14.5S4.9 13.8 2.6 12.6C1.8 12.1 1 11.5 1 10.6s.8-1.5 1.6-2C4.9 7.3 8.2 6.5 12 6.5zM12 9.5c3.8 0 7.1.8 9.4 2.1.8.5 1.6 1.1 1.6 2s-.8 1.5-1.6 2C19.1 16.8 15.8 17.5 12 17.5S4.9 16.8 2.6 15.6C1.8 15.1 1 14.5 1 13.6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                        </div>
+                        <h3>React</h3>
+                    </div>
+                    <p>Component-based development, hooks, state management, dan SPA.</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="skill-card reveal" style="transition-delay:0.2s">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                    </div>
+                    <p>User-centered design, wireframing, prototyping, dan Figma.</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                </div>
+
+                <!-- Git/GitHub -->
+                <div class="skill-card reveal" style="transition-delay:0.25s">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="currentColor"/></svg>
+                        </div>
+                        <h3>Git / GitHub</h3>
+                    </div>
+                    <p>Version control, branching, pull requests, dan kolaborasi tim.</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+                        <span class="skill-pct">78%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Recent <span>Projects</span></h2>
+                <p class="section-desc">Beberapa project terbaik yang telah saya kerjakan dengan penuh dedikasi.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="pg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1"/>
+                                    <stop offset="100%" style="stop-color:#4338ca"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="200" fill="url(#pg1)"/>
+                            <rect x="20" y="20" width="160" height="10" rx="5" fill="rgba(255,255,255,0.2)"/>
+                            <rect x="20" y="40" width="120" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
+                            <rect x="20" y="60" width="200" height="80" rx="8" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="30" y="70" width="80" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+                            <rect x="30" y="85" width="120" height="5" rx="2.5" fill="rgba(255,255,255,0.15)"/>
+                            <rect x="30" y="98" width="90" height="5" rx="2.5" fill="rgba(255,255,255,0.15)"/>
+                            <rect x="240" y="40" width="140" height="140" rx="10" fill="rgba(255,255,255,0.06)"/>
+                            <text x="200" y="185" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="11" font-family="monospace">E-Commerce Platform</text>
+                        </svg>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn overlay-btn-primary" aria-label="Live demo of E-Commerce Platform">↗ Live Demo</a>
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="overlay-btn overlay-btn-secondary" aria-label="Source code on GitHub">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform e-commerce lengkap dengan fitur katalog produk, keranjang belanja, dan sistem pembayaran yang terintegrasi.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn primary-link" aria-label="View live demo">Live Demo</a>
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="View source code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" style="transition-delay:0.1s">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="pg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8b5cf6"/>
+                                    <stop offset="100%" style="stop-color:#6d28d9"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="200" fill="url(#pg2)"/>
+                            <rect x="30" y="30" width="340" height="140" rx="10" fill="rgba(255,255,255,0.06)"/>
+                            <rect x="50" y="50" width="60" height="60" rx="8" fill="rgba(255,255,255,0.12)"/>
+                            <rect x="130" y="50" width="60" height="60" rx="8" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="210" y="50" width="60" height="60" rx="8" fill="rgba(255,255,255,0.1)"/>
+                            <rect x="290" y="50" width="60" height="60" rx="8" fill="rgba(255,255,255,0.06)"/>
+                            <text x="200" y="185" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="11" font-family="monospace">Task Management App</text>
+                        </svg>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn overlay-btn-primary" aria-label="Live demo of Task Management App">↗ Live Demo</a>
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="overlay-btn overlay-btn-secondary" aria-label="Source code on GitHub">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Aplikasi manajemen tugas produktif dengan fitur deadline tracking, priority sorting, dan kolaborasi tim secara real-time.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn primary-link" aria-label="View live demo">Live Demo</a>
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="View source code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" style="transition-delay:0.2s">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="pg3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06b6d4"/>
+                                    <stop offset="100%" style="stop-color:#0891b2"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="200" fill="url(#pg3)"/>
+                            <circle cx="200" cy="95" r="60" fill="rgba(255,255,255,0.06)"/>
+                            <circle cx="200" cy="95" r="45" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="60" y="60" width="100" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+                            <rect x="60" y="78" width="70" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+                            <text x="200" y="185" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="11" font-family="monospace">Portfolio Website</text>
+                        </svg>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn overlay-btn-primary" aria-label="Live demo of Portfolio Website">↗ Live Demo</a>
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="overlay-btn overlay-btn-secondary" aria-label="Source code on GitHub">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Website portfolio responsif dengan glassmorphism design, animasi smooth, dark/light mode, dan performa optimal.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn primary-link" aria-label="View live demo">Live Demo</a>
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="View source code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Experience &amp; <span>Education</span></h2>
+                <p class="section-desc">Perjalanan belajar dan pengalaman yang telah membentuk saya sebagai developer.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Item 1: Masih belajar (sekarang) -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 – Sekarang</span>
+                        <h3>Siswa Aktif Kelas 11 RPL</h3>
+                        <span class="timeline-org">SMK Telkom Purwokerto</span>
+                        <p class="timeline-description">
+                            Masih aktif belajar di jurusan Rekayasa Perangkat Lunak — memperdalam
+                            pemrograman web, UI/UX design, dan terus mengembangkan skill dengan
+                            mengerjakan project-project pribadi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Project FoodTracker -->
+                <div class="timeline-item reveal" style="transition-delay:0.1s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Project — FoodTracker App</h3>
+                        <span class="timeline-org">Project Sekolah / Personal</span>
+                        <p class="timeline-description">
+                            Mengerjakan aplikasi <strong>FoodTracker</strong> — sebuah aplikasi untuk
+                            memantau dan mencatat asupan makanan harian. Mengimplementasikan fitur
+                            tracking nutrisi, manajemen data makanan, dan tampilan yang intuitif.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Masuk SMK -->
+                <div class="timeline-item reveal" style="transition-delay:0.2s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Mulai Belajar di SMK Telkom</h3>
+                        <span class="timeline-org">SMK Telkom Purwokerto</span>
+                        <p class="timeline-description">
+                            Memulai perjalanan di dunia Rekayasa Perangkat Lunak — mempelajari
+                            dasar-dasar pemrograman, algoritma, web development, dan mulai
+                            membangun fondasi sebagai seorang developer muda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What They Say</span>
+                <h2 class="section-title">Testi<span>monials</span></h2>
+                <p class="section-desc">Apa yang dikatakan teman dan kolaborator tentang kerja sama dengan saya.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-text">
+                        "Nuzultan adalah rekan yang sangat dedicated. Dia selalu memberikan hasil kerja
+                        yang berkualitas tinggi dan tepat waktu. Kemampuan problem-solving-nya sangat
+                        impressive untuk seorang pelajar."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" aria-hidden="true">AR</div>
+                        <div>
+                            <div class="testimonial-name">Ahmad Rizky</div>
+                            <div class="testimonial-role">Teman Satu Jurusan, RPL</div>
+                        </div>
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal" style="transition-delay:0.1s">
+                    <p class="testimonial-text">
+                        "Website yang dibuatkan Nuzultan untuk toko saya sangat bagus dan mudah digunakan.
+                        Responsif di semua perangkat dan loading-nya cepat. Sangat puas dengan hasilnya!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" aria-hidden="true">SF</div>
+                        <div>
+                            <div class="testimonial-name">Siti Fatimah</div>
+                            <div class="testimonial-role">Klien Freelance, UMKM Owner</div>
+                        </div>
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal" style="transition-delay:0.2s">
+                    <p class="testimonial-text">
+                        "Sangat senang berkolaborasi dengan Nuzultan di project sekolah. Dia selalu
+                        punya ide-ide kreatif yang fresh, cepat belajar teknologi baru, dan enak
+                        diajak diskusi. Developer muda yang potensial!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" aria-hidden="true">BP</div>
+                        <div>
+                            <div class="testimonial-name">Budi Pratama</div>
+                            <div class="testimonial-role">Rekan Project, SMK Telkom</div>
+                        </div>
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's <span>Connect</span></h2>
+                <p class="section-desc">Punya project menarik atau sekadar ingin berkenalan? Saya terbuka untuk diskusi!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Nama Lengkap</label>
+                            <input type="text" id="contactName" name="name" placeholder="Nama kamu..." required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="email@kamu.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" placeholder="Tentang apa?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Pesan</label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper reveal" style="transition-delay:0.15s">
+                    <div>
+                        <h3 class="contact-heading">Siap berkolaborasi<br>dan berkarya bersama 🚀</h3>
+                        <p class="contact-subtext">
+                            Saya selalu tertarik dengan peluang baru, proyek menarik, atau sekadar
+                            obrolan tentang teknologi dan desain. Jangan ragu untuk menghubungi saya!
+                        </p>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="mailto:nuzultanaryanramadhan@gmail.com" class="contact-link-item" aria-label="Send email">
+                            <div class="contact-link-icon" style="background:rgba(239,68,68,0.1); color:#ef4444;">✉️</div>
+                            <div>
+                                <div class="contact-link-label">Email</div>
+                                <div class="contact-link-value">nuzultanaryanramadhan@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Visit GitHub profile">
+                            <div class="contact-link-icon" style="background:rgba(99,102,241,0.1); color:var(--primary-light);">🐙</div>
+                            <div>
+                                <div class="contact-link-label">GitHub</div>
+                                <div class="contact-link-value">github.com/NuzultanAryan</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nuzultan-aryan-ramadhan-b7320a3b0" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Visit LinkedIn profile">
+                            <div class="contact-link-icon" style="background:rgba(14,118,189,0.1); color:#0e76bd;">💼</div>
+                            <div>
+                                <div class="contact-link-label">LinkedIn</div>
+                                <div class="contact-link-value">Nuzultan Aryan Ramadhan</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="social-section">
+                        <p class="social-title">Follow Me</p>
+                        <div class="social-links">
+                            <!-- GitHub -->
+                            <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/nuzultan-aryan-ramadhan-b7320a3b0" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/ryyn2336" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram profile">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 0 2.881 1.44 1.44 0 0 1 0-2.881z"/></svg>
+                            </a>
+                            <!-- Email -->
+                            <a href="mailto:nuzultanaryanramadhan@gmail.com" class="social-link" aria-label="Send email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand-name">Nuzultan Aryan Ramadhan</div>
+                    <p class="footer-brand-desc">
+                        Siswa RPL di SMK Telkom Purwokerto yang passionate membangun
+                        pengalaman web yang indah dan fungsional.
+                    </p>
+                </div>
+                <div>
+                    <p class="footer-col-title">Navigation</p>
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-col-title">Social</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/NuzultanAryan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙 GitHub</a>
+                        <a href="https://www.linkedin.com/in/nuzultan-aryan-ramadhan-b7320a3b0" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼 LinkedIn</a>
+                        <a href="https://www.instagram.com/ryyn2336" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸 Instagram</a>
+                        <a href="mailto:nuzultanaryanramadhan@gmail.com" aria-label="Email">✉️ Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Nuzultan Aryan Ramadhan. All rights reserved.</p>
+                <p class="footer-bottom-love">Made with <span>♥</span> in Purwokerto</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <span class="toast-icon">✅</span>
+        <span id="toastMsg">Pesan berhasil dikirim!</span>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
